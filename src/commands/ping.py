@@ -9,4 +9,4 @@ async def process(client, msg, args, extra):
     if len(args) == 0:
         await client.edit_message(msgToEdit, "Pong!!! {0:.2f}ms".format(pingTime))
     else:
-        await client.edit_message(msgToEdit, "Pong!!! {0:.2f}ms | {}".format(pingTime, " ".join(args)))
+        await client.edit_message(msgToEdit, "Pong!!! {0:.2f}ms | {1}".format(pingTime, " ".join(args)))
