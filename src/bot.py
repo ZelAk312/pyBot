@@ -23,7 +23,8 @@ async def on_ready():
 
 @client.event
 async def on_message(msg):
-    await CommandHand.handle(msg)
+    if msg.author.id == client.user.id:
+        await CommandHand.handle(msg)
 
 #Login the bot
-client.run(config["bot"]["token"])
+client.run(config["bot"]["token"], bot=False)
