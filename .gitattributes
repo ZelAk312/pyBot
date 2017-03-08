@@ -4,7 +4,7 @@
 # Custom for Visual Studio
 *.cs     diff=csharp
 
-# Standard to msysgit
+# Standard to msysgi
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain
 *.docx diff=astextplain
